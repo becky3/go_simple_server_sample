@@ -1,0 +1,2 @@
+# go_simple_server_sample
+Goでローカルサーバーを立ち上げる
