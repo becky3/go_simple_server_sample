@@ -1,4 +1,4 @@
-# go_simple_server_sample
+# run_server
 Goでローカルサーバーを立ち上げる
 
 # 実行
