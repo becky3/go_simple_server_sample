@@ -16,5 +16,15 @@ func main() {
 	if err != nil {
 		panic(err)
 	}
+	log.Println(string("Status ======="))
+	log.Println("Status:", resp.Status)
+	log.Println("StatusCode:", resp.StatusCode)
+
+	log.Println(string("Header ======="))
+	log.Println(resp.Header)
+
+	log.Println("[Content-Length]:", resp.Header.Get("Content-Length"))
+
+	log.Println(string("Header ======="))
 	log.Println(string(body))
 }
