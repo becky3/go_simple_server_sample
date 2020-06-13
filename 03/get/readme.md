@@ -3,7 +3,7 @@ GETによる情報取得
 
 # 前提
 
-[run_server](../02/run_server) を立ち上げておく
+[run_server](../../02/run_server) を立ち上げておく
 
 # レスポンス
 
