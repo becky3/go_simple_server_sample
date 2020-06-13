@@ -14,7 +14,18 @@ func handler(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 	fmt.Println(string(dump))
-	fmt.Fprintf(w, "<html><body>hello Go!</body></html>\n")
+
+	w.Header().Add("Set-Cookie", "VISIT=TRUE")
+	fmt.Fprintf(w, "<html><body>\n")
+
+	if _, ok := r.Header["Cookie"]; ok {
+		fmt.Fprintf(w, "<p>二回目以降</p>\n")
+	} else {
+		fmt.Fprintf(w, "<p>初訪問</p>")
+	}
+
+	fmt.Fprintf(w, "</body></html>\n")
+
 }
 
 func main() {
