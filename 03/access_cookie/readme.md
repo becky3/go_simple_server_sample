@@ -46,13 +46,17 @@ Set-Cookie: VISIT=TRUE
 ```
 
 # サーバー側ログ
+
+## 一回目
 ```
 GET /cookie HTTP/1.1
 Host: localhost:18888
 Accept-Encoding: gzip
 User-Agent: Go-http-client/1.1
+```
 
-
+## 二回目
+```
 GET /cookie HTTP/1.1
 Host: localhost:18888
 Accept-Encoding: gzip
